@@ -8,7 +8,6 @@ import Auth from './components/Auth/Auth';
 import PostDetails from './components/PostDetails/PostDetails';
 
 const App = () => {
-  //const GOOGLE_OAUTH = process.env.REACT_APP_GOOGLE_OAUTH;
   const user = JSON.parse(localStorage.getItem('profile'));
   return  (
     <BrowserRouter>
