@@ -8,12 +8,12 @@ import Auth from './components/Auth/Auth';
 import PostDetails from './components/PostDetails/PostDetails';
 
 const App = () => {
-  const GOOGLE_OAUTH = process.env.REACT_APP_GOOGLE_OAUTH;
+  //const GOOGLE_OAUTH = process.env.REACT_APP_GOOGLE_OAUTH;
   const user = JSON.parse(localStorage.getItem('profile'));
   return  (
     <BrowserRouter>
       <Container maxWidth='xl'>
-      <GoogleOAuthProvider clientId = {GOOGLE_OAUTH} >
+      <GoogleOAuthProvider clientId = '473004543329-qkk9u4p3mtrpjght3dc7qq1f71jr542b.apps.googleusercontent.com' >
         <Navbar />
         <Switch>
           <Route path='/' exact component={() => <Redirect to='/posts' />} />
